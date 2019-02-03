@@ -8,7 +8,7 @@ Node js version of my personal website. This is still in early development and i
 - Go to http://localhost:8080
 
 ## Main server file
-ind.js
+server.js
 
 ## Routing
 All api requests go through /api/

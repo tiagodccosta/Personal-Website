@@ -49,7 +49,7 @@
 }
 
 #nav li a {
-  color: white;
+  color: rgb(255, 255, 255);
   text-align: center;
   padding: 18px 18px;
   font-family: Roboto;
@@ -69,8 +69,22 @@
 
 #intro a:link {
   	background-color: transparent; 
-  	text-decoration: none;
+	text-decoration: none;
+	color: white;
 }
+
+#intro a:visited {
+	background-color: transparent; 
+	text-decoration: none;
+	color: white;
+}
+
+#intro a:hover {
+	background-color: transparent; 
+	text-decoration: underline;
+	color: white;
+  }
+  
 
 #intro h2 {
 	padding-left: 80px;
@@ -140,7 +154,6 @@ ul.third {
 	font-size: 16px;
 	text-align: center;
 	padding-top: 80px;
-	padding-bottom: 30px;
 }
 
 ul.LGoals {
@@ -163,6 +176,8 @@ ul.SGoals {
 
 button {
 	position: relative;
+	margin-bottom: 100px;
+	margin-top: 100px;
 }
 
 button {
@@ -234,3 +249,68 @@ button:hover:after {
 	margin-left: 500px;
 	margin-right: 300px;
 }
+
+footer {
+	background: #282828;
+}
+
+footer h3 {
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-size: 22px;
+	text-align: center;
+	padding-top: 50px;
+	color: #FFFFFF;
+}
+
+footer p {
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-size: 14px;
+	text-align: center;
+	padding-bottom: 20px;
+	color: #FFFFFF;
+}
+
+#container {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	text-align: center;
+}
+
+#container .fa {
+	padding: 10px;
+	font-size: 20px;
+	width: 20px;
+	text-align: center;
+	text-decoration: none;
+	margin: 10px 5px;
+	border-radius: 50%;
+  }
+  
+  #container .fa:hover {
+	  opacity: 0.7;
+  }
+  
+  #container .fa-facebook {
+	background: #3B5998;
+	color: white;
+  }
+  
+  #container .fa-linkedin {
+	background: #007bb5;
+	color: white;
+  }
+
+  #container .fa-instagram {
+	background: #125688;
+	color: white;
+  }
+  
+  #container .fa-android {
+	background: #a4c639;
+	color: white;
+  }
+  
+  #container .fa-github {
+	 background: orange;
+	 color: white;
+ }

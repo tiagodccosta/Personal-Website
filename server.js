@@ -34,7 +34,7 @@ router.get('/Contact', (request, response) => {
 //Further in the project will show a template instead of the error message
 //
 router.get("*", (request, response) => {
-    response.send(404);
+    response.sendStatus(404);
 });
 
 app.use("/", router);

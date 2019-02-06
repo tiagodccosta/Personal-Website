@@ -20,10 +20,10 @@ with html, css, javascript etc.. but if you go to localhost:8080/api/software
 it will not grab html.. the route assumes you are trying to access an api functionality
 
 ## HTML Pages
-All html pages are in the /public directory. 
+All html pages are in the /public/pages directory. 
 
 ## Static Files (CSS, Javascript)
-/public directory
+/public/static directory
 
 When an html page links to a stylesheet or some script, express serves the Static
 files in the /public/ directory.

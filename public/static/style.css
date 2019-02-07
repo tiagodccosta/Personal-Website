@@ -11,12 +11,645 @@
 
 
 @media (min-width: 600px) and (max-width: 767px) {
+	*{
+		padding: 0;
+		margin: 0;
+	}
+
+	#header {
+		background-image: url(./images/setup3.jpg);
+		height: 100vh;
+		background-size: cover;
+		background-position: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+	#header h1 {
+		font-family: Roboto;
+		font-size: 80px;
+		color: #FFF;
+		text-transform: uppercase;
+	}
 	
+	#header h5{
+		font-family: Roboto;
+		font-size: 20px;
+		color: #FFF;
+		text-transform: uppercase;
+		text-align: justify;
+		word-spacing: 8px;
+	}
+
+	#nav ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: #1e1b1b;
+		position: fixed;
+		top: 0;
+		width: 100%;
+	  }
+	  
+	  #nav li {
+		  display: inline-flex;
+	  }
+	  
+	  #nav li a {
+		color: rgb(255, 255, 255);
+		text-align: center;
+		padding: 18px 18px;
+		font-family: Roboto;
+		font-size: 16px;
+		text-decoration: none;
+	  }
+	  
+	  /* Change the link color on hover */
+	  #nav li a:hover {
+		background-color: #b8b8b8;
+	  }
+
+	  #intro {
+		background-color: #191919;
+		color: #FFFFFF;
+	}
+	
+	#intro a:link {
+		background-color: transparent; 
+		text-decoration: none;
+		color: white;
+	}
+	
+	#intro a:visited {
+		background-color: transparent; 
+		text-decoration: none;
+		color: white;
+	}
+	
+	#intro a:hover {
+		background-color: transparent; 
+		text-decoration: underline;
+		color: white;
+	  }
+	  
+	
+	#intro h2 {
+		padding-left: 50px;
+		padding-top: 80px;
+		padding-bottom: 80px;
+		font-family: Roboto;
+		font-size: 50px;
+	}
+	
+	#intro p {
+		font-family: Roboto;
+		font-size: 20px;
+		text-align: justify;
+		padding-left: 90px;
+		padding-right: 90px;
+		padding-bottom: 100px;
+		word-spacing: 8px;
+	}
+	
+	#intro h3 {
+		font-family: Roboto;
+		font-size: 18px;
+	}
+	
+	#intro li {
+		font-family: Roboto;
+		font-size: 14px;
+	}
+	
+	ul.first, ul.second, ul.third {
+		padding-bottom: 100px;
+		word-spacing: 4px;
+		text-align: center;
+		text-align: justify;
+		margin-left: 200px;
+		margin-right: 150px;
+	}
+	
+	#projects h2{
+		font-family: Roboto;
+		font-size: 30px;
+		padding-left: 60px;
+		padding-top: 100px;
+	}
+	
+	#projects {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+	
+	#projects p {
+		font-family: Roboto;
+		font-size: 16px;
+		text-align: center;
+		padding-top: 80px;
+	}
+	
+	ul.LGoals {
+		text-align: justify;
+		padding-left: 80px;
+		padding-bottom: 50px;
+		padding-top: 50px;
+		font-family: Roboto;
+		font-size: 20px;
+	}
+	
+	ul.SGoals {
+		text-align: justify;
+		padding-left: 80px;
+		padding-bottom: 20px;
+		padding-top: 50px;
+		font-family: Roboto;
+		font-size: 20px;
+	}
+	
+	button {
+		position: relative;
+		margin-bottom: 80px;
+		margin-top: 80px;
+	}
+	
+	button {
+		background: #A8BCC2;
+		color: #414141;
+		width: 110px;
+		height: 40px;
+		font-size: 17px;
+		font-family: Roboto;
+		border-radius: 4px;
+		transition: .6s;
+		overflow: hidden;
+	}
+	
+	button:focus {
+		outline: #1e1b1b;
+	}
+	
+	button:before {
+		content: '';
+		display: block;
+		position: absolute;
+		background: rgba(255,255,255,.5);
+		width: 60px;
+		height: 100%;
+		left: 0;
+		top: 0;
+		opacity: .5s;
+		filter: blur(30px);
+		transform: translateX(-130px) skewX(-15deg);
+	}
+	
+	button:after {
+		content: '';
+		display: block;
+		position: absolute;
+		background: rgba(255,255,255,.2);
+		width: 30px;
+		height: 100%;
+		left: 30px;
+		top: 0;
+		opacity: 0;
+		filter: blur(30px);
+		transform: translate(-100px) scaleX(-15deg);
+	}
+	
+	button:hover {
+		cursor: pointer;
+	}
+	
+	button:hover:before {
+		transform: translateX(300px) skewX(-15deg);
+		opacity: .6;
+		transition: .7s;
+	}
+	
+	button:hover:after {
+		transform: translateX(300px) skewX(-15deg);
+		opacity: .6;
+		transition: .7s;
+	}
+	
+	.floatedLeft {
+		margin-right: 180px;
+		margin-left: 40px;
+	}
+	
+	.floatedRight {
+		margin-left: 180px;
+		margin-right: 80px;
+	}
+
+	footer {
+		background: #282828;
+	}
+	
+	footer h3 {
+		font-family: 'Trebuchet MS', 
+		'Lucida Sans Unicode',
+		'Lucida Grande', 'Lucida Sans', 
+		 Arial, sans-serif;
+		font-size: 22px;
+		text-align: center;
+		padding-top: 50px;
+		color: #FFFFFF;
+	}
+	
+	footer h4 {
+		font-family: 'Trebuchet MS', 
+		'Lucida Sans Unicode',
+		'Lucida Grande', 'Lucida Sans', 
+		 Arial, sans-serif;
+		font-size: 18px;
+		text-align: center;
+		padding-top: 50px;
+		color: #FFFFFF;
+	}
+	
+	footer p {
+		font-family: 'Trebuchet MS', 
+		'Lucida Sans Unicode', 
+		'Lucida Grande', 'Lucida Sans',
+		 Arial, sans-serif;
+		font-size: 14px;
+		text-align: center;
+		padding-bottom: 20px;
+		color: #FFFFFF;
+	}
+	
+	#container {
+		padding-top: 40px;
+		padding-bottom: 40px;
+		text-align: center;
+	}
+	
+	#container .fa {
+		padding: 10px;
+		font-size: 20px;
+		width: 20px;
+		text-align: center;
+		text-decoration: none;
+		margin: 10px 5px;
+		border-radius: 50%;
+	  }
+	  
+	  #container .fa:hover {
+		  opacity: 0.7;
+	  }
+	  
+	  #container .fa-facebook {
+		background: #3B5998;
+		color: white;
+	  }
+	  
+	  #container .fa-linkedin {
+		background: #007bb5;
+		color: white;
+	  }
+	
+	  #container .fa-instagram {
+		background: #125688;
+		color: white;
+	  }
+	  
+	  #container .fa-android {
+		background: #a4c639;
+		color: white;
+	  }
+	  
+	  #container .fa-github {
+		 background: orange;
+		 color: white;
+	 }
 } 
 
 
 @media (min-width: 768px) and (max-width: 1023px){
+	*{
+		padding: 0;
+		margin: 0;
+	}
+
+	#header {
+		background-image: url(./images/setup3.jpg);
+		height: 100vh;
+		background-size: cover;
+		background-position: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+	#header h1 {
+		font-family: Roboto;
+		font-size: 80px;
+		color: #FFF;
+		text-transform: uppercase;
+	}
 	
+	#header h5{
+		font-family: Roboto;
+		font-size: 20px;
+		color: #FFF;
+		text-transform: uppercase;
+		text-align: justify;
+		word-spacing: 8px;
+	}
+
+	#nav ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: #1e1b1b;
+		position: fixed;
+		top: 0;
+		width: 100%;
+	  }
+	  
+	  #nav li {
+		  display: inline-flex;
+	  }
+	  
+	  #nav li a {
+		color: rgb(255, 255, 255);
+		text-align: center;
+		padding: 18px 18px;
+		font-family: Roboto;
+		font-size: 16px;
+		text-decoration: none;
+	  }
+	  
+	  /* Change the link color on hover */
+	  #nav li a:hover {
+		background-color: #b8b8b8;
+	  }
+
+	  #intro {
+		background-color: #191919;
+		color: #FFFFFF;
+	}
+	
+	#intro a:link {
+		background-color: transparent; 
+		text-decoration: none;
+		color: white;
+	}
+	
+	#intro a:visited {
+		background-color: transparent; 
+		text-decoration: none;
+		color: white;
+	}
+	
+	#intro a:hover {
+		background-color: transparent; 
+		text-decoration: underline;
+		color: white;
+	  }
+	  
+	
+	#intro h2 {
+		padding-left: 50px;
+		padding-top: 80px;
+		padding-bottom: 80px;
+		font-family: Roboto;
+		font-size: 50px;
+	}
+	
+	#intro p {
+		font-family: Roboto;
+		font-size: 20px;
+		text-align: justify;
+		padding-left: 90px;
+		padding-right: 90px;
+		padding-bottom: 100px;
+		word-spacing: 8px;
+	}
+	
+	#intro h3 {
+		font-family: Roboto;
+		font-size: 18px;
+	}
+	
+	#intro li {
+		font-family: Roboto;
+		font-size: 14px;
+	}
+	
+	ul.first, ul.second, ul.third {
+		padding-bottom: 100px;
+		word-spacing: 4px;
+		text-align: center;
+		text-align: justify;
+		margin-left: 300px;
+		margin-right: 150px;
+	}
+	
+	#projects h2{
+		font-family: Roboto;
+		font-size: 30px;
+		padding-left: 80px;
+		padding-top: 100px;
+	}
+	
+	#projects {
+		padding-left: 80px;
+		padding-right: 80px;
+	}
+	
+	#projects p {
+		font-family: Roboto;
+		font-size: 16px;
+		text-align: center;
+		padding-top: 80px;
+	}
+	
+	ul.LGoals {
+		text-align: justify;
+		padding-left: 110px;
+		padding-bottom: 50px;
+		padding-top: 50px;
+		font-family: Roboto;
+		font-size: 20px;
+	}
+	
+	ul.SGoals {
+		text-align: justify;
+		padding-left: 110px;
+		padding-right: 110px;
+		padding-bottom: 20px;
+		padding-top: 50px;
+		font-family: Roboto;
+		font-size: 20px;
+	}
+	
+	button {
+		position: relative;
+		margin-bottom: 80px;
+		margin-top: 80px;
+	}
+	
+	button {
+		background: #A8BCC2;
+		color: #414141;
+		width: 110px;
+		height: 40px;
+		font-size: 17px;
+		font-family: Roboto;
+		border-radius: 4px;
+		transition: .6s;
+		overflow: hidden;
+	}
+	
+	button:focus {
+		outline: #1e1b1b;
+	}
+	
+	button:before {
+		content: '';
+		display: block;
+		position: absolute;
+		background: rgba(255,255,255,.5);
+		width: 60px;
+		height: 100%;
+		left: 0;
+		top: 0;
+		opacity: .5s;
+		filter: blur(30px);
+		transform: translateX(-130px) skewX(-15deg);
+	}
+	
+	button:after {
+		content: '';
+		display: block;
+		position: absolute;
+		background: rgba(255,255,255,.2);
+		width: 30px;
+		height: 100%;
+		left: 30px;
+		top: 0;
+		opacity: 0;
+		filter: blur(30px);
+		transform: translate(-100px) scaleX(-15deg);
+	}
+	
+	button:hover {
+		cursor: pointer;
+	}
+	
+	button:hover:before {
+		transform: translateX(300px) skewX(-15deg);
+		opacity: .6;
+		transition: .7s;
+	}
+	
+	button:hover:after {
+		transform: translateX(300px) skewX(-15deg);
+		opacity: .6;
+		transition: .7s;
+	}
+	
+	.floatedLeft {
+		margin-right: 250px;
+		margin-left: 60px;
+	}
+	
+	.floatedRight {
+		margin-left: 250px;
+		margin-right: 100px;
+	}
+
+	footer {
+		background: #282828;
+	}
+	
+	footer h3 {
+		font-family: 'Trebuchet MS', 
+		'Lucida Sans Unicode',
+		'Lucida Grande', 'Lucida Sans', 
+		 Arial, sans-serif;
+		font-size: 22px;
+		text-align: center;
+		padding-top: 50px;
+		color: #FFFFFF;
+	}
+	
+	footer h4 {
+		font-family: 'Trebuchet MS', 
+		'Lucida Sans Unicode',
+		'Lucida Grande', 'Lucida Sans', 
+		 Arial, sans-serif;
+		font-size: 18px;
+		text-align: center;
+		padding-top: 50px;
+		color: #FFFFFF;
+	}
+	
+	footer p {
+		font-family: 'Trebuchet MS', 
+		'Lucida Sans Unicode', 
+		'Lucida Grande', 'Lucida Sans',
+		 Arial, sans-serif;
+		font-size: 14px;
+		text-align: center;
+		padding-bottom: 20px;
+		color: #FFFFFF;
+	}
+	
+	#container {
+		padding-top: 40px;
+		padding-bottom: 40px;
+		text-align: center;
+	}
+	
+	#container .fa {
+		padding: 10px;
+		font-size: 20px;
+		width: 20px;
+		text-align: center;
+		text-decoration: none;
+		margin: 10px 5px;
+		border-radius: 50%;
+	  }
+	  
+	  #container .fa:hover {
+		  opacity: 0.7;
+	  }
+	  
+	  #container .fa-facebook {
+		background: #3B5998;
+		color: white;
+	  }
+	  
+	  #container .fa-linkedin {
+		background: #007bb5;
+		color: white;
+	  }
+	
+	  #container .fa-instagram {
+		background: #125688;
+		color: white;
+	  }
+	  
+	  #container .fa-android {
+		background: #a4c639;
+		color: white;
+	  }
+	  
+	  #container .fa-github {
+		 background: orange;
+		 color: white;
+	 }
 } 
 
 
@@ -143,12 +776,12 @@
 	
 	ul.first {
 		text-align: justify;
-		padding-left: 80px;
+		padding-left: 60px;
 	}
 	
 	ul.second {
 		text-align: justify;
-		padding-left: 150px;
+		padding-left: 120px;
 	}
 	
 	ul.third {
@@ -261,12 +894,12 @@
 	}
 	
 	.floatedLeft {
-		margin-right: 500px;
+		margin-right: 400px;
 		margin-left: 150px;
 	}
 	
 	.floatedRight {
-		margin-left: 500px;
+		margin-left: 400px;
 		margin-right: 150px;
 	}
 
@@ -1152,19 +1785,19 @@
 	
 	ul.first {
 		text-align: justify;
-		padding-left: 120px;
+		padding-left: 200px;
 		padding-right: 120px;
 	}
 	
 	ul.second {
 		text-align: justify;
 		padding-right: 120px;
-		padding-left: 120px;
+		padding-left: 160px;
 	}
 	
 	ul.third {
 		text-align: justify;
-		padding-left: 120px;
+		padding-left: 160px;
 	}
 	
 	#projects h2{

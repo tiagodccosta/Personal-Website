@@ -27,3 +27,20 @@ All html pages are in the /public/pages directory.
 
 When an html page links to a stylesheet or some script, express serves the Static
 files in the /public/ directory.
+
+
+##Media Queries
+@media (min-width: 375px) and (max-width: 599px) {}
+
+
+@media (min-width: 600px) and (max-width: 767px) {}
+
+@media (min-width: 768px) and (max-width: 1023px){}
+
+@media (min-width: 1024px) and (max-width: 1439px){}
+
+@media (min-width: 1440px) and (max-width: 1679px){}
+
+@media (min-width: 1680px) and (max-width: 1919px) {}
+
+@media (min-width: 1920px) {}

@@ -1,0 +1,53 @@
+
+@media (min-width: 375px) and (max-width: 599px) {}
+
+
+@media (min-width: 600px) and (max-width: 767px) {}
+
+@media (min-width: 768px) and (max-width: 1023px){}
+
+@media (min-width: 1024px) and (max-width: 1439px){}
+
+@media (min-width: 1440px) and (max-width: 1679px){}
+
+@media (min-width: 1680px) and (max-width: 1919px) {}
+
+@media (min-width: 1920px) {
+
+    *{
+		padding: 0;
+		margin: 0;
+	}
+	
+
+    #nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #1e1b1b;
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+      
+      #nav li {
+          display: inline-flex;
+      }
+      
+      #nav li a {
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 18px 18px;
+        font-family: Roboto;
+        font-size: 16px;
+        text-decoration: none;
+      }
+      
+      /* Change the link color on hover */
+      #nav li a:hover {
+        background-color: #b8b8b8;
+      }
+      
+
+}

@@ -13,7 +13,7 @@ router.get('/', (request, response) => {
 
 //sends /Software page to the server
 router.get('/Software', (request, response) => {
-    response.json("You are in the software page!");
+    response.sendFile(path.join(__dirname, "/public/pages/software.html"));
 });
 
 //sends /Sports page to the server

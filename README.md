@@ -29,7 +29,7 @@ When an html page links to a stylesheet or some script, express serves the Stati
 files in the /public/ directory.
 
 
-##Media Queries
+## Media Queries
 
 @media (min-width: 375px) and (max-width: 599px) {}
 

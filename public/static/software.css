@@ -15,10 +15,9 @@
 @media (min-width: 1920px) {
 
     *{
-		padding: 0;
-		margin: 0;
-	}
-	
+      padding: 0;
+      margin: 0;
+    }
 
     #nav ul {
         list-style: none;
@@ -30,11 +29,15 @@
         top: 0;
         width: 100%;
       }
+
       
+
       #nav li {
           display: inline-flex;
       }
+
       
+
       #nav li a {
         color: rgb(255, 255, 255);
         text-align: center;
@@ -43,11 +46,144 @@
         font-size: 16px;
         text-decoration: none;
       }
-      
+
       /* Change the link color on hover */
       #nav li a:hover {
         background-color: #b8b8b8;
       }
-      
 
+      #header {
+        background-image: url(./images/softwareHeader.jpg);
+        height: 75vh;
+        background-size: cover;
+        background-position: top;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #header h1 {
+        font-family: Roboto;
+        font-size: 100px;
+        color: #FFF;
+        text-transform: uppercase;
+        text-align: center;
+      }
+
+      #header h5 {
+        font-family: Roboto;
+        font-size: 20px;
+        color: #FFF;
+        text-transform: uppercase;
+        text-align: justify;
+        word-spacing: 8px;
+      }
+
+      #projects p{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 30px;
+        text-align: center;
+        padding-top: 100px;
+        padding-bottom: 40px;
+      }
+
+      #projects {
+        padding-left: 300px;
+        padding-right: 300px;
+        padding-bottom: 80px;
+      }
+
+      #projects table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+
+      #projects th, td {
+        padding: 5px;
+        font-family: 'Montserrat', sans-serif;
+      }
+
+      footer {
+        background: #282828;
+      }
+      
+      footer h3 {
+        font-family: 'Trebuchet MS', 
+        'Lucida Sans Unicode',
+        'Lucida Grande', 'Lucida Sans', 
+         Arial, sans-serif;
+        font-size: 22px;
+        text-align: center;
+        padding-top: 50px;
+        color: #FFFFFF;
+      }
+
+      footer h4 {
+        font-family: 'Trebuchet MS', 
+        'Lucida Sans Unicode',
+        'Lucida Grande', 'Lucida Sans', 
+         Arial, sans-serif;
+        font-size: 18px;
+        text-align: center;
+        padding-top: 50px;
+        color: #FFFFFF;
+
+      }
+      
+      footer p {
+        font-family: 'Trebuchet MS', 
+        'Lucida Sans Unicode', 
+        'Lucida Grande', 'Lucida Sans',
+         Arial, sans-serif;
+        font-size: 14px;
+        text-align: center;
+        padding-bottom: 20px;
+        color: #FFFFFF;
+      }
+
+      #container {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        text-align: center;
+      }
+      
+      #container .fa {
+        padding: 10px;
+        font-size: 20px;
+        width: 20px;
+        text-align: center;
+        text-decoration: none;
+        margin: 10px 5px;
+        border-radius: 50%;
+        }        
+
+        #container .fa:hover {
+          opacity: 0.7;
+        }      
+
+        #container .fa-facebook {
+        background: #3B5998;
+        color: white;
+        }
+        
+        #container .fa-linkedin {
+        background: #007bb5;
+        color: white;
+        }
+
+        #container .fa-instagram {
+        background: #125688;
+        color: white;
+        }
+        
+        #container .fa-android {
+        background: #a4c639;
+        color: white;
+        }
+        
+        #container .fa-github {
+         background: orange;
+         color: white;
+       }
 }

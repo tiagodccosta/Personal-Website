@@ -18,12 +18,12 @@ router.get('/Software', (request, response) => {
 
 //sends /Sports page to the server
 router.get('/Sports', (request, response) => {
-    response.json("You are in the sports page!");
+    response.sendFile(path.join(__dirname, "/public/pages/sports.html"));
 });
 
 //sends /Contact page to the server
 router.get('/Contact', (request, response) => {
-    response.json("You are in the contact me page!");
+    response.sendFile(path.join(__dirname, "/public/pages/contact.html"));
 });
 
 //
@@ -34,7 +34,7 @@ router.get('/Contact', (request, response) => {
 //Further in the project will show a template instead of the error message
 //
 router.get("*", (request, response) => {
-    response.sendStatus(404);
+    response.sendFile(path.join(__dirname, "/public/pages/404.html"));
 });
 
 app.use("/", router);
